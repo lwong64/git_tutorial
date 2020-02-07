@@ -109,13 +109,16 @@ knitr::include_graphics("../images/whygit3.png")
 
 **[Github Desktop Tutorial](https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
 
+# Before we move on... some terminology 
+
 ## git terms
 
-* **Head** = the tip of your current branch
+* **head** = the tip of your current branch
     * e.g. the master branch or my "tim" branch
-* **Origin** = the online head of the respective branch
+* **origin** = the online head of the respective branch
     * you'll notice that Github Desktop says "fetch origin"
-* **Fetch** = 
+* **fetch** = tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transfering. It's more like just checking to see if there are any changes available). 
+* **pull** = on the other hand does that AND brings (copy) those changes from the remote repository (i.e. it merges the online changes to your local branch)
 
 # Activity 2
 
@@ -130,6 +133,10 @@ Using [Gihub desktop](https://desktop.github.com):
 4. Commit your edits
 5. Publish to github
 6. Make a pull request
+
+## How to deal with merge conflicts
+
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github
 
 ## git branch
 
