@@ -119,8 +119,6 @@ knitr::include_graphics("../images/whygit3.png")
 
 ## Activity 2: Clone a Github repo, make some edits, and merge it into the master
 
-Using [Gihub desktop](https://desktop.github.com):
-
 1. Move your `Github` folder to your Home directory and rename it `git`
 1. Clone the repo https://github.com/timathomas/git_tutorial
 1. Make a branch
