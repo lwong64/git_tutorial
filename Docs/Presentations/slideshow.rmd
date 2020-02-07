@@ -45,9 +45,11 @@ knitr::include_graphics("../images/bettergit.png")
 knitr::include_graphics("../images/branching.png")
 ```
 
-# <u>***Don't store data in a repo***</u>
+## <span style="color:red">*Caution:* <u>***Don't store data in a repo***</u></span>
 
 Instead, use Google Drive or Box
+
+Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time 
 
 # Basic git principles
 
@@ -82,7 +84,7 @@ knitr::include_graphics("../images/whygit3.png")
 1. <u>***edit***</u> your file(s)
 2. <u>***commit***</u> your changes (a.k.a. staging)
 3. <u>***push***</u> to your branch on Github
-4. <u>***merge***</u> your final edits into the master through a **pull request** 
+4. <u>***merge***</u> your final edits into the master through a **pull request** on Github.com
 
 <!-- # Prepare for activity 1 -->
 
@@ -103,7 +105,17 @@ knitr::include_graphics("../images/whygit3.png")
 6. Make a pull request
 
 
-** [Github's online tutorial](https://guides.github.com/activities/hello-world/)
+*[Github's online tutorial](https://guides.github.com/activities/hello-world/)
+
+**[Github Desktop Tutorial](https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
+
+## git terms
+
+* **Head** = the tip of your current branch
+    * e.g. the master branch or my "tim" branch
+* **Origin** = the online head of the respective branch
+    * you'll notice that Github Desktop says "fetch origin"
+* **Fetch** = 
 
 # Activity 2
 
