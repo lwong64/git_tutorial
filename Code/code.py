@@ -3,6 +3,8 @@
 # below this line, pick a person #, change it to your name and a simple equation
 
 # Person 1
+# Renee
+11*6
 
 # Person 2
 
