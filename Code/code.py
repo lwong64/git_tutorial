@@ -22,6 +22,8 @@
 # Professor Karen Chapple
 
 # Person 6
+# Carson 
+45*10
 
 # Person 7
 # Rachel
