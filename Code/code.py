@@ -10,7 +10,7 @@
 
 # Person 4
 #Emmanuel Lopez
-2**2
+2+2+5-3-2
 
 # Person 5
 
