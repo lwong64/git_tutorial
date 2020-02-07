@@ -7,6 +7,8 @@
 11*6
 
 # Person 2
+# Chris
+4*8
 
 # Person 3
 
