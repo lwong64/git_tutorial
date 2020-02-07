@@ -102,12 +102,7 @@ knitr::include_graphics("../images/whygit3.png")
 3. Edit a file
 4. Make a commit 
 5. Publish to github
-6. Make a pull request
-
-
-*[Github's online tutorial](https://guides.github.com/activities/hello-world/)
-
-**[Github Desktop Tutorial](https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
+6. Make a pull request (i.e. merge from your branch to the master)
 
 # Before we move on... some terminology 
 
@@ -118,7 +113,7 @@ knitr::include_graphics("../images/whygit3.png")
 * **origin** = the online head of the respective branch
     * you'll notice that Github Desktop says "fetch origin"
 * **fetch** = tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transfering. It's more like just checking to see if there are any changes available). 
-* **pull** = on the other hand does that AND brings (copy) those changes from the remote repository (i.e. it merges the online changes to your local branch)
+* **pull** = on the other hand does that AND brings (copy) those changes from the remote repository (i.e. it ***merges*** the online changes to your local branch)
 
 # Activity 2
 
@@ -138,11 +133,12 @@ Using [Gihub desktop](https://desktop.github.com):
 
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github
 
-## git branch
+## Some resources
 
-```{code}
-git branch
-```
+* [Github's online tutorial](https://guides.github.com/activities/hello-world/)
+
+* [Github Desktop Tutorial](https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
+
 
 
 <!-- #  -->
