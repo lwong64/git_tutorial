@@ -13,6 +13,7 @@
 # Person 4
 
 # Person 5
+# Professor Karen Chapple
 
 # Person 6
 
