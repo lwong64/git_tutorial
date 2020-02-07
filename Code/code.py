@@ -19,7 +19,6 @@
 2+2+5-3-2
 
 # Person 5
-# Professor Karen Chapple
 
 # Person 6
 # Carson 
