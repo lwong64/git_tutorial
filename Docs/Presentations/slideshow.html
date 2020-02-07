@@ -3284,172 +3284,11 @@ slide:not(.current) .plotly.html-widget{
 <ul>
 <li><p><a href='https://guides.github.com/activities/hello-world/' title=''>Github’s online tutorial</a></p></li>
 <li><p><a href='https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop' title=''>Github Desktop Tutorial</a></p></li>
+<li><p><a href='https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6' title=''>A beginner’s guide to git and Github using the command line</a></p></li>
+<li><p><a href='https://software-carpentry.org/lessons/' title=''>Software Carpentry</a></p></li>
 </ul>
 
-<!-- #  -->
-
-<!-- This tutorial is taken largely from [Software Carpentry https://software-carpentry.org/lessons/](https://software-carpentry.org/lessons/) -->
-
-<!-- --- -->
-
-</article></slide><slide class=""><hgroup><h2>Getting started</h2></hgroup><article  id="getting-started">
-
-<ol>
-<li>Open <code>terminal</code> in windows or <code>powershell</code> in Windows</li>
-</ol>
-
-<p>Creating a repository</p>
-
-<pre class = 'prettyprint lang-code'>cd ~/Desktop # navigate to a directory
-mkdir planets # make a directory (folder) calles plamets
-cd planets # move into that directory
-
-git init # initialize the directory
-
-ls # take a look inside
-
-ls -a # look a little deeper
-
-git status # check the git status</pre>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Tracking changes</p>
-
-<pre >mkdir moons # make another directory called moons
-nano mars.txt # create a text file using the core editor
-Cold and dry, but everything is my favorite color
-    # press ctrl X, y, return
-cat mars.txt # look at
-
-git status # check the git status
-git add mars.txt # stage mars.txt
-git status # check the additions
-
-git commit -m &quot;Start notes on Mars as a base&quot;
-git status</pre>
-
-<p>After you commit, git takes everything we added (staged) and stores a permanent copy in the <code>.git</code> directory. This is called a <a href='http://swcarpentry.github.io/git-novice/reference#commit' title=''>commit</a> and it’s identifier is named in the commit output.</p>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Check the commit</p>
-
-<pre >git log</pre>
-
-<p>Adding some changes</p>
-
-<pre >nano mars.txt
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-
-cat mars.txt
-
-git status
-git diff
-
-git commit -m &quot;Add concerns about effects of Mars&#39; moons on Wolfman&quot;
-    # this won&#39;t work until we add (stage) it
-
-git add mars.txt
-git commit -m &quot;Add concerns about effects of Mars&#39; moons on Wolfman&quot;</pre>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Let’s add some more</p>
-
-<pre >nano mars.txt
-But the Mummy will appreciate the lack of humidity
-
-cat mars.txt
-
-git diff
-
-git add mars.txt
-git diff
-git diff --staged
-
-git commit -m &quot;Discuss concerns about Mars&#39; climate for Mummy&quot;
-
-git status
-
-git log
-git log -1
-git log --oneline</pre>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Exploring histories</p>
-
-<pre >nano mars.txt
-An ill-considered change
-
-git diff HEAD mars.txt
-
-git add mars.txt
-git commit -m &quot;considerations&quot;
-
-git log
-git log --oneline
-git diff HEAD~1 mars.txt
-git diff HEAD~2 mars.txt</pre>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Checkout an older version</p>
-
-<pre >git log --oneline
-
-git checkout HEAD~2 mars.txt
-cat mars.txt
-
-git checkout HEAD mars.txt
-cat mars.txt
-
-git checkout HEAD~1 mars.txt
-cat mars.txt
-git add mars.txt
-git commit -m &quot;reverting to previous version&quot;</pre>
-
-<h3>Collaboration with <a href='https://github.com' title=''>github.com</a></h3>
-
-<ul>
-<li>Github is great for public repos</li>
-<li>Gitlab is great for more security and private repos</li>
-<li>both allow collaboration</li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<p>Make some commits and then do a pull request This way, collaborators can see what you’re working on Name it</p>
-
-<pre >WIP: ....</pre>
-
-<pre >echo &quot;*~&quot; &gt;&gt; .gitignore
-
-git add .gitignore
-git commit -m &quot;add .gitignore&quot;
-git push origin master </pre>
-
-<h3>My Workflow</h3>
-
-<ul>
-<li>After you’ve completed a task or reached a goal, merge your branch to the master.
-
-<ul>
-<li>If you’re collaborating, merge through the online repo, not through the terminal</li>
-</ul></li>
-</ul>
-
-<h3>Suggestions</h3>
-
-<ul>
-<li>Keep a log.md and update the README.md file often</li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<h4>My favorite tools</h4>
+</article></slide><slide class=""><hgroup><h2>My favorite tools</h2></hgroup><article  id="my-favorite-tools">
 
 <ul>
 <li><a href='https://www.sublimetext.com' title=''>Sublime Text</a>
@@ -3463,7 +3302,331 @@ git push origin master </pre>
 </ul></li>
 </ul></li>
 <li><a href='https://www.sublimemerge.com' title=''>Sublime Merge</a> to view complex branches</li>
-</ul></article></slide>
+</ul>
+
+<!-- #  -->
+
+<!-- This tutorial is taken largely from  -->
+
+<!-- --- -->
+
+<!-- ## Getting started  -->
+
+<!-- 1. Open `terminal` in windows or `powershell` in Windows -->
+
+<!-- Creating a repository  -->
+
+<!-- ```{code} -->
+
+<!-- cd ~/Desktop # navigate to a directory -->
+
+<!-- mkdir planets # make a directory (folder) calles plamets -->
+
+<!-- cd planets # move into that directory -->
+
+<!-- git init # initialize the directory -->
+
+<!-- ls # take a look inside -->
+
+<!-- ls -a # look a little deeper -->
+
+<!-- git status # check the git status -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Tracking changes  -->
+
+<!-- ``` -->
+
+<!-- mkdir moons # make another directory called moons -->
+
+<!-- nano mars.txt # create a text file using the core editor -->
+
+<!-- Cold and dry, but everything is my favorite color -->
+
+<!--     # press ctrl X, y, return -->
+
+<!-- cat mars.txt # look at -->
+
+<!-- git status # check the git status -->
+
+<!-- git add mars.txt # stage mars.txt -->
+
+<!-- git status # check the additions -->
+
+<!-- git commit -m "Start notes on Mars as a base" -->
+
+<!-- git status -->
+
+<!-- ``` -->
+
+<!-- After you commit, git takes everything we added (staged) and stores a permanent copy in the `.git` directory. This is called a [commit](http://swcarpentry.github.io/git-novice/reference#commit) and it's identifier is named in the commit output.  -->
+
+<!-- ---  -->
+
+<!-- Check the commit -->
+
+<!-- ``` -->
+
+<!-- git log -->
+
+<!-- ``` -->
+
+<!-- Adding some changes -->
+
+<!-- ``` -->
+
+<!-- nano mars.txt -->
+
+<!-- Cold and dry, but everything is my favorite color -->
+
+<!-- The two moons may be a problem for Wolfman -->
+
+<!-- cat mars.txt -->
+
+<!-- git status -->
+
+<!-- git diff -->
+
+<!-- git commit -m "Add concerns about effects of Mars' moons on Wolfman" -->
+
+<!--     # this won't work until we add (stage) it -->
+
+<!-- git add mars.txt -->
+
+<!-- git commit -m "Add concerns about effects of Mars' moons on Wolfman" -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Let's add some more -->
+
+<!-- ``` -->
+
+<!-- nano mars.txt -->
+
+<!-- But the Mummy will appreciate the lack of humidity -->
+
+<!-- cat mars.txt -->
+
+<!-- git diff -->
+
+<!-- git add mars.txt -->
+
+<!-- git diff -->
+
+<!-- git diff --staged -->
+
+<!-- git commit -m "Discuss concerns about Mars' climate for Mummy" -->
+
+<!-- git status -->
+
+<!-- git log -->
+
+<!-- git log -1 -->
+
+<!-- git log --oneline -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Exploring histories -->
+
+<!-- ``` -->
+
+<!-- nano mars.txt -->
+
+<!-- An ill-considered change -->
+
+<!-- git diff HEAD mars.txt -->
+
+<!-- git add mars.txt -->
+
+<!-- git commit -m "considerations" -->
+
+<!-- git log -->
+
+<!-- git log --oneline -->
+
+<!-- git diff HEAD~1 mars.txt -->
+
+<!-- git diff HEAD~2 mars.txt -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Checkout an older version -->
+
+<!-- ``` -->
+
+<!-- git log --oneline -->
+
+<!-- git checkout HEAD~2 mars.txt -->
+
+<!-- cat mars.txt -->
+
+<!-- git checkout HEAD mars.txt -->
+
+<!-- cat mars.txt -->
+
+<!-- git checkout HEAD~1 mars.txt -->
+
+<!-- cat mars.txt -->
+
+<!-- git add mars.txt -->
+
+<!-- git commit -m "reverting to previous version" -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- ## Branching -->
+
+<!-- ``` -->
+
+<!-- git branch wip -->
+
+<!-- git branch -->
+
+<!-- git checkout wip -->
+
+<!-- git branch -->
+
+<!-- nano mars.txt -->
+
+<!-- Elon is giving us a ride tomorrow -->
+
+<!-- git add mars.txt -->
+
+<!-- git commit -m "travel plans" -->
+
+<!-- cat mars.txt -->
+
+<!-- git checkout master -->
+
+<!-- cat mars.txt -->
+
+<!-- git merge wip -->
+
+<!-- cat mars.txt -->
+
+<!-- git merge wip -->
+
+<!-- cat mars.txt -->
+
+<!-- ``` -->
+
+<!-- * Don't work on the master branch -->
+
+<!-- --- -->
+
+<!-- ### Collaboration with [github.com](https://github.com) -->
+
+<!-- * Github is great for public repos -->
+
+<!-- * Gitlab is great for more security and private repos -->
+
+<!-- * both allow collaboration -->
+
+<!-- --- -->
+
+<!-- Make some commits and then do a pull request  -->
+
+<!-- This way, collaborators can see what you're working on  -->
+
+<!-- Name it  -->
+
+<!-- ``` -->
+
+<!-- WIP: .... -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- ### Connecting your local repository to github.com -->
+
+<!-- ...push an existing repository from the command line -->
+
+<!-- ``` -->
+
+<!-- git remote add origin https://github.com/timathomas/planets.git -->
+
+<!-- git push -u origin master  -->
+
+<!-- ``` -->
+
+<!-- When you're on a branch -->
+
+<!-- ``` -->
+
+<!-- git push origin <branch name> -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- ``` -->
+
+<!-- echo "*~" >> .gitignore -->
+
+<!-- git add .gitignore -->
+
+<!-- git commit -m "add .gitignore" -->
+
+<!-- git push origin master  -->
+
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- ### My Workflow -->
+
+<!-- * Start or fork a repo -->
+
+<!-- * clone the online repo to my local machine -->
+
+<!-- * make some base edits to the README.md -->
+
+<!-- * BRANCH! (Stay off the master) -->
+
+<!--     - If I'm collaborating, do a pull request online sooner than later -->
+
+<!--         + label it `WIP: branch name` -->
+
+<!--     - Stage and commit often (like your habit of saving a file) -->
+
+<!-- --- -->
+
+<!-- ### My Workflow -->
+
+<!-- * After you've completed a task or reached a goal, merge your branch to the master. -->
+
+<!--     - If you're collaborating, merge through the online repo, not through the terminal -->
+
+<!-- ### Suggestions -->
+
+<!-- * Keep a log.md and update the README.md file often -->
+
+<!-- --- -->
+
+<!-- #### My favorite tools -->
+
+<!-- * [Sublime Text](https://www.sublimetext.com) -->
+
+<!--     - Others [Atom](https://atom.io) (sluggish in my opinion) -->
+
+<!--     - Favorite Sublime Packages -->
+
+<!--         + Git, Gitgutter, Thesaurus, LanguageTool, R-IDE, SendCode, Terminal -->
+
+<!-- * [Sublime Merge](https://www.sublimemerge.com) to view complex branches --></article></slide>
 
 
   <slide class="backdrop"></slide>
