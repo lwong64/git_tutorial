@@ -15,6 +15,8 @@
 # Person 6
 
 # Person 7
+# Rachel
+3 + 3 
 
 # Person 8
 
