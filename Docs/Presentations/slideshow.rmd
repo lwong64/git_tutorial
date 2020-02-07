@@ -9,6 +9,10 @@ output:
         # logo: ../images/UDPLogo.png{width = 1000px}
 ---
 
+## This slide presentation
+
+https://timathomas.github.io/git_tutorial/slideshow.html
+
 ## What ___NOT___ to do (a.k.a. my dissertation)
 
 ```{r, out.width = "80%", echo=FALSE}
@@ -38,18 +42,21 @@ knitr::include_graphics("../images/bettergit.png")
 ## Work in parallel branches
 
 * Your master is your primary working version (e.g. 1.0)
-    * Don't ever work in the master, just in your branch
 * When you want to make edits, you start a branch, make edits, then merge your work into the master
 
 ```{r, out.width = "100%", echo=FALSE}
 knitr::include_graphics("../images/branching.png")
 ```
 
-## <span style="color:red">*Caution:* <u>***Don't store data in a repo***</u></span>
+## <span style="color:red">*Caution:*</spam>
 
-Instead, use Google Drive or Box
+1. <u>***Don't ever work in the master, just in your branch***</u>
 
-Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time 
+2. <u>***Don't store data in a repo***</u></span>
+
+* Instead, use Google Drive or Box
+
+* Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time 
 
 # Basic git principles
 
