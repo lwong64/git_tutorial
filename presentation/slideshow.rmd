@@ -35,6 +35,8 @@ knitr::include_graphics("../images/bettergit.png")
 
 ## Reproducible code & public facing work
 
+Git is a data scientists home for [projects](https://github.com/timathomas), but also
+
 * Hosting [websites](https://evictions.study)
 * Hosting [interactive maps](https://cci-ucb.github.io/sensitive_communities/map.html) and [code](https://github.com/cci-ucb/sensitive_communities)
 * [Public facing documents](https://gitlab.com/timathomas/talks/-/tree/master/Presentation_PDFs)
@@ -50,13 +52,16 @@ knitr::include_graphics("../images/branching.png")
 
 ## <span style="color:red">*Caution:*</spam>
 
-1. <u>***Don't ever work in the master, just in your branch***</u>
+1. <u>***When working with team members, don't work in the master, just in your branch***</u>.
+* You can easily cause conflicts between versions. 
 
 2. <u>***Don't store data in a repo***</u></span>
 
-* Instead, use Google Drive or Box
+* Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time. 
 
-* Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time 
+* Instead, use Google Drive or Box  
+
+* If you convert a private repo to a public one, all the history and data will become public.  
 
 # Basic git principles
 

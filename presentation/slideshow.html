@@ -41,19 +41,6 @@
     };
   </script>
 
-  <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
-// be compatible with the behavior of Pandoc < 2.8).
-document.addEventListener('DOMContentLoaded', function(e) {
-  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
-  var i, h, a;
-  for (i = 0; i < hs.length; i++) {
-    h = hs[i];
-    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
-    a = h.attributes;
-    while (a.length > 0) h.removeAttribute(a[0].name);
-  }
-});
-</script>
   <style type="text/css">@font-face {
 font-family: 'Open Sans';
 font-style: normal;
@@ -3164,6 +3151,8 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Reproducible code &amp; public facing work</h2></hgroup><article  id="reproducible-code-public-facing-work">
 
+<p>Git is a data scientists home for <a href='https://github.com/timathomas' title=''>projects</a>, but also</p>
+
 <ul>
 <li>Hosting <a href='https://evictions.study' title=''>websites</a></li>
 <li>Hosting <a href='https://cci-ucb.github.io/sensitive_communities/map.html' title=''>interactive maps</a> and <a href='https://github.com/cci-ucb/sensitive_communities' title=''>code</a></li>
@@ -3182,13 +3171,21 @@ slide:not(.current) .plotly.html-widget{
 </article></slide><slide class=""><hgroup><h2><span style="color:red"><em>Caution:</em></spam></h2></hgroup><article  id="caution">
 
 <ol>
-<li><p><u><strong><em>Don’t ever work in the master, just in your branch</em></strong></u></p></li>
-<li><p><u><strong><em>Don’t store data in a repo</em></strong></u></span></p></li>
+<li><u><strong><em>When working with team members, don’t work in the master, just in your branch</em></strong></u>.</li>
 </ol>
 
 <ul>
+<li>You can easily cause conflicts between versions.</li>
+</ul>
+
+<ol>
+<li><u><strong><em>Don’t store data in a repo</em></strong></u></span></li>
+</ol>
+
+<ul>
+<li><p>Github repositories have about a 2gb limit and you can’t push files bigger than 100mb at a time.</p></li>
 <li><p>Instead, use Google Drive or Box</p></li>
-<li><p>Github repositories have about a 2gb limit and you can’t push files bigger than 100mb at a time</p></li>
+<li><p>If you convert a private repo to a public one, all the history and data will become public.</p></li>
 </ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Basic git principles</h2></hgroup><article  id="basic-git-principles">
