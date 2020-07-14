@@ -1,38 +1,49 @@
-4+2
+# Find your name and add a short equation below it like 4+2 = 6
 
-# below this line, pick a person #, change it to your name and a simple equation
+# Aboubacar Ndiaye
 
-# Person 1
-# Renee
-11*6
+# Alex Marqusee
 
-# Person 2
-# Chris
-4*8
+# Amee Chew
 
-# Person 3
-# ethan
-24235.04/98.6
+# Anna Cash
 
-# Person 4
-#Emmanuel Lopez
-2+2+5-3-2
+# Anthony Carroll
 
-# Person 5
-# Professor Karen Chapple
+# Brandon Harrell
 
-# Person 6
-# Carson 
-45*10
+# Danielle Mazzella
 
-# Person 7
-# Rachel
-3 + 3 
+# Darrell Owens
 
-# Person 8
-# Tim
-10*5
+# Dylan Sweeney
 
-# Person 9
+# Eliza McCullough
 
-# Person 10
+# Elizabeth Mattiuzzi
+
+# Emma Ishii
+
+# Joshua Croff
+
+# Karen Camacho
+
+# Kaya Tollas
+
+# Kearey Smith
+
+# Lance Hilderbrand
+
+# Lindsay Rosenfeld
+
+# Louis Mirante
+
+# Megan Zapanta
+
+# Nicole Montojo
+
+# Sky Liang
+
+# Teddie Pierce
+
+# Ying Sham

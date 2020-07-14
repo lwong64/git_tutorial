@@ -2,27 +2,27 @@
 title: "*What to do with all that code...?*"
 subtitle: "A reproducible code workflow using git & Github"
 author: Tim Thomas
-date: 2020.02.07
+date: 2020.07.14
 output: 
     ioslides_presentation:
         css: style.css
-        # logo: ../images/UDPLogo.png{width = 1000px}
+        # logo: images/UDPLogo.png{width = 1000px}
 ---
 
 ## This slide presentation
 
-https://timathomas.github.io/git_tutorial/slideshow.html
+https://timathomas.github.io/git_tutorial/presentation/slideshow.html
 
 ## What ___NOT___ to do (a.k.a. my dissertation)
 
 ```{r, out.width = "80%", echo=FALSE}
-knitr::include_graphics("../images/messy.png")
+knitr::include_graphics("images/messy.png")
 ```
 
 ## A better git workflow 
 
 ```{r, out.width = "90%", echo=FALSE}
-knitr::include_graphics("../images/bettergit.png")
+knitr::include_graphics("images/bettergit.png")
 ```
 
 # Why git?
@@ -47,7 +47,7 @@ Git is a data scientists home for [projects](https://github.com/timathomas), but
 * When you want to make edits, you start a branch, make edits, then merge your work into the master
 
 ```{r, out.width = "100%", echo=FALSE}
-knitr::include_graphics("../images/branching.png")
+knitr::include_graphics("images/branching.png")
 ```
 
 ## <span style="color:red">*Caution:*</spam>
@@ -72,7 +72,7 @@ knitr::include_graphics("../images/branching.png")
 * add more edits
 
 ```{r, out.width = "80%", echo=FALSE}
-knitr::include_graphics("../images/whygit1.png")
+knitr::include_graphics("images/whygit1.png")
 ```
 
 ## Collaboration
@@ -80,7 +80,7 @@ knitr::include_graphics("../images/whygit1.png")
 Make <u>**edits**</u> in your branch, <u>**commit**</u> your edits to the repo, and <u>**push**</u> to your branch in Github
 
 ```{r, out.width = "70%", echo=FALSE}
-knitr::include_graphics("../images/whygit2.png")
+knitr::include_graphics("images/whygit2.png")
 ```
 
 ## Collaboration
@@ -88,7 +88,7 @@ knitr::include_graphics("../images/whygit2.png")
 Then, make a <u>**pull request**</u> to <u>**merge**</u> your edits into the master
 
 ```{r, out.width = "70%", echo=FALSE}
-knitr::include_graphics("../images/whygit3.png")
+knitr::include_graphics("images/whygit3.png")
 ```
 
 ## git workflow summary
@@ -109,12 +109,31 @@ knitr::include_graphics("../images/whygit3.png")
 
 ## Activity #1: Create a git repository on your local machine and push it to Github using [Github desktop](https://desktop.github.com)
 
-1. Initalize a directory
+1. Initialize a directory
 2. Create a branch
 3. Edit a file
 4. Make a commit 
 5. Publish to github
 6. Make a pull request (i.e. merge from your branch to the master)
+
+## Summary of what we just did
+
+1. We made a repo
+2. We made some edits
+3. We staged the edits on our computer (add and commit edits)
+4. We pushed the edits onto Github.com
+
+## Add and Commit 
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("images/GithubDesktop12.png")
+```
+
+## Push to Github.com
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("images/GithubDesktop3.png")
+```
 
 # Before we move on... some terminology 
 
@@ -124,7 +143,7 @@ knitr::include_graphics("../images/whygit3.png")
     * e.g. the master branch or my "tim" branch
 * **origin** = the online head of the respective branch
     * you'll notice that Github Desktop says "fetch origin"
-* **fetch** = tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transfering. It's more like just checking to see if there are any changes available). 
+* **fetch** = tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available). 
 * **pull** = on the other hand does that AND brings (copy) those changes from the remote repository (i.e. it ***merges*** the online changes to your local branch)
 
 # Activity 2
