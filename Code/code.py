@@ -47,3 +47,6 @@
 # Teddie Pierce
 
 # Ying Sham
+
+# Tim Thomas
+4/2 = 2
