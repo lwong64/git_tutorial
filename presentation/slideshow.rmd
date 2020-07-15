@@ -110,11 +110,10 @@ knitr::include_graphics("images/whygit3.png")
 ## Activity #1: Create a git repository on your local machine and push it to Github using [Github desktop](https://desktop.github.com)
 
 1. Initialize a directory
-2. Create a branch
-3. Edit a file
-4. Make a commit 
-5. Publish to github
-6. Make a pull request (i.e. merge from your branch to the master)
+2. Edit a file
+3. Make a commit 
+4. Publish to github
+5. Make a pull request (i.e. merge your edits to the master)
 
 ## Summary of what we just did
 
@@ -157,6 +156,15 @@ knitr::include_graphics("images/GithubDesktop3.png")
 4. Commit your edits
 5. Publish to github
 6. Make a pull request
+
+## What you'll be doing mostly during your projects
+
+You'll ___work in the master___ and ___work on your own python notebook___ (.ipynb)
+
+1. Edit
+2. Pull
+3. Stage
+4. Push
 
 ## How to deal with merge conflicts
 
