@@ -11,7 +11,7 @@ output:
 
 ## This slide presentation
 
-https://timathomas.github.io/git_tutorial/presentation/slideshow.html
+[here](https://timathomas.github.io/git_tutorial/presentation/intro_activity_20220707.html#1)
 
 ## What ___NOT___ to do (a.k.a. my dissertation)
 
