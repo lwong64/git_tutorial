@@ -1,8 +1,8 @@
 ---
-title: "*All you need to know about Github*"
+title: "*All you need to<br>know about Github*"
 subtitle: "A reproducible code workflow using git & Github"
 author: Tim Thomas
-date: 2020.07.14
+date: 2022.07.08
 output: 
     ioslides_presentation:
         css: style.css
@@ -54,16 +54,18 @@ knitr::include_graphics("images/branching.png")
 
 ## <span style="color:red">*Caution:*</spam>
 
+1. <u>***Learning github is a challenge and the best way to do it is to adopt it and use it all the time***</u>.
+    * "The Kicking and Screaming" method. 
 1. <u>***When working with team members, don't work in the main branch, just in your branch***</u>.
-* You can easily cause conflicts between versions. 
+    * You can easily cause conflicts between versions. 
 
-2. <u>***Don't store data in a repo***</u></span>
+1. <u>***Don't store data in a repo***</u></span>
 
-* Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time. 
+    * Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time. 
 
-* Instead, use Google Drive or Box  
+    * Instead, use Google Drive or Box  
 
-* If you convert a private repo to a public one, all the history and data will become public.  
+    * If you convert a private repo to a public one, all the history and data will become public.  
 
 # Basic git principles
 
