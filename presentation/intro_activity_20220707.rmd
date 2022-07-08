@@ -1,0 +1,424 @@
+---
+title: "*All you need to know about Github*"
+subtitle: "A reproducible code workflow using git & Github"
+author: Tim Thomas
+date: 2020.07.14
+output: 
+    ioslides_presentation:
+        css: style.css
+        # logo: images/UDPLogo.png{width = 1000px}
+---
+
+## This slide presentation
+
+https://timathomas.github.io/git_tutorial/presentation/slideshow.html
+
+## What ___NOT___ to do (a.k.a. my dissertation)
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("images/messy.png")
+```
+
+## A better git workflow 
+
+```{r, out.width = "90%", echo=FALSE}
+knitr::include_graphics("images/bettergit.png")
+```
+
+# Why git?
+
+## Version control & collaboration
+
+* Version control is like an ***unlimited ‘undo’***.
+* Version control also ***allows teams to work in parallel***.
+* Primarily used for ***coding*** (python, R, sql, julia, etc.), ***writing*** (markdown, latex, etc.), and many ***other formats***
+
+## Reproducible code & public facing work
+
+Git is a data scientists home for [projects](https://github.com/timathomas), but also
+
+* Hosting [open source code](https://github.com/urban-displacement/displacement-typologies)
+* Hosting [interactive maps](https://urban-displacement.github.io/displacement-typologies/maps/sanfrancisco_udp.html) that can be [embeded in websites](https://www.urbandisplacement.org/maps/sf-bay-area-gentrification-and-displacement/)
+* Hosting [websites](https://evictions.study)
+* Public facing documents like [reports](https://urban-displacement.github.io/edr-ut/slc_edr_report/)
+* Project management using [Github issues](https://github.com/urban-displacement/edr-ut/issues?q=is%3Aissue+is%3Aclosed)
+
+## Work in parallel branches
+
+* Your main branch is your primary working version (e.g. 1.0)
+* When you want to make edits, you start a branch, make edits, then merge your work into the main
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("images/branching.png")
+```
+
+## <span style="color:red">*Caution:*</spam>
+
+1. <u>***When working with team members, don't work in the main branch, just in your branch***</u>.
+* You can easily cause conflicts between versions. 
+
+2. <u>***Don't store data in a repo***</u></span>
+
+* Github repositories have about a 2gb limit and you can't push files bigger than 100mb at a time. 
+
+* Instead, use Google Drive or Box  
+
+* If you convert a private repo to a public one, all the history and data will become public.  
+
+# Basic git principles
+
+## Before git
+
+* base version
+* make some edits
+* add more edits
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("images/whygit1.png")
+```
+
+## Collaboration
+
+Make <u>**edits**</u> in your branch, <u>**commit**</u> your edits to the repo, and <u>**push**</u> to your branch in Github
+
+```{r, out.width = "70%", echo=FALSE}
+knitr::include_graphics("images/whygit2.png")
+```
+
+## Collaboration
+
+Then, make a <u>**pull request**</u> to <u>**merge**</u> your edits into the main
+
+```{r, out.width = "70%", echo=FALSE}
+knitr::include_graphics("images/whygit3.png")
+```
+
+## git workflow summary
+
+1. <u>***edit***</u> your file(s)
+2. <u>***commit***</u> your changes (a.k.a. staging)
+3. <u>***push***</u> to your branch on Github
+4. <u>***merge***</u> your final edits into the main through a **pull request** on Github.com
+
+<!-- # Prepare for activity 1 -->
+
+<!-- ## Prep -->
+<!-- 1. Download [Gihub desktop](https://desktop.github.com) -->
+<!-- 1. Make a "git" directory in your Home directory -->
+<!-- 1. Open the Github Desktop Application -->
+
+# Activity 1
+
+## Activity #1: Create a git repository on your local machine and push it to Github using [Github desktop](https://desktop.github.com)
+
+1. Initialize a directory
+2. Edit a file
+3. Make a commit 
+4. Publish to github
+5. Make a pull request (i.e. merge your edits to the main)
+
+## Summary of what we just did
+
+1. We made a repo
+2. We made some edits
+3. We staged the edits on our computer (add and commit edits)
+4. We pushed the edits onto Github.com
+
+## Add and Commit 
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("images/GithubDesktop12.png")
+```
+
+## Push to Github.com
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("images/GithubDesktop3.png")
+```
+
+# Before we move on... some terminology 
+
+## git terms
+
+* **head** = the tip of your current branch
+    * e.g. the main branch or my "tim" branch
+* **origin** = the online head of the respective branch
+    * you'll notice that Github Desktop says "fetch origin"
+* **fetch** = tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available). 
+* **pull** = on the other hand does that AND brings (copy) those changes from the remote repository (i.e. it ***merges*** the online changes to your local branch)
+
+# Activity 2
+
+## Activity 2a: Fork and clone a Github repo, make a file, and push to main
+
+Forking = making a copy of an existing repo (this becomes your personal repo)
+
+Cloning = making a clone of a repo onto your machine (you have to be given access to make edits)
+
+
+1. Fork the repo https://github.com/timathomas/git_tutorial
+1. Clone the new repo onto your machine
+1. Create a text file 
+1. `commit` your edits
+1. `push` to github
+
+## Activity 2b: make a branch, edit the file, and merge to main
+
+1. Make a branch
+1. Edit the file
+1. `commit` your edits
+1. `push` to your branch
+1. Make a pull request on Github
+1. Merge branch to main on Github
+
+## What you'll be doing mostly during your projects
+
+You'll ___work in the main___ and ___work on your own coding file___ (.ipynb, .r, etc.)
+
+1. Edit
+2. Pull
+3. Stage
+4. Push
+
+## How to deal with merge conflicts
+
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github
+
+## Some resources
+
+* [Github's online tutorial](https://guides.github.com/activities/hello-world/)
+
+* [Github Desktop Tutorial](https://help.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
+
+* [A beginner's guide to git and Github using the command line](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+
+* [Software Carpentry](https://software-carpentry.org/lessons/)
+
+## My favorite tools
+* [Sublime Text](https://www.sublimetext.com)
+    - Others [Atom](https://atom.io) (sluggish in my opinion)
+    - Favorite Sublime Packages
+        + Git, Gitgutter, Thesaurus, LanguageTool, R-IDE, SendCode, Terminal
+* [Sublime Merge](https://www.sublimemerge.com) to view complex branches
+
+<!-- #  -->
+
+<!-- This tutorial is taken largely from  -->
+
+<!-- --- -->
+
+<!-- ## Getting started  -->
+<!-- 1. Open `terminal` in windows or `powershell` in Windows -->
+
+
+<!-- Creating a repository  -->
+
+<!-- ```{code} -->
+<!-- cd ~/Desktop # navigate to a directory -->
+<!-- mkdir planets # make a directory (folder) calles plamets -->
+<!-- cd planets # move into that directory -->
+
+<!-- git init # initialize the directory -->
+
+<!-- ls # take a look inside -->
+
+<!-- ls -a # look a little deeper -->
+
+<!-- git status # check the git status -->
+<!-- ``` -->
+<!-- --- -->
+
+<!-- Tracking changes  -->
+
+<!-- ``` -->
+<!-- mkdir moons # make another directory called moons -->
+<!-- nano mars.txt # create a text file using the core editor -->
+<!-- Cold and dry, but everything is my favorite color -->
+<!--     # press ctrl X, y, return -->
+<!-- cat mars.txt # look at -->
+
+<!-- git status # check the git status -->
+<!-- git add mars.txt # stage mars.txt -->
+<!-- git status # check the additions -->
+
+<!-- git commit -m "Start notes on Mars as a base" -->
+<!-- git status -->
+<!-- ``` -->
+
+<!-- After you commit, git takes everything we added (staged) and stores a permanent copy in the `.git` directory. This is called a [commit](http://swcarpentry.github.io/git-novice/reference#commit) and it's identifier is named in the commit output.  -->
+
+<!-- ---  -->
+
+<!-- Check the commit -->
+<!-- ``` -->
+<!-- git log -->
+<!-- ``` -->
+
+<!-- Adding some changes -->
+<!-- ``` -->
+<!-- nano mars.txt -->
+<!-- Cold and dry, but everything is my favorite color -->
+<!-- The two moons may be a problem for Wolfman -->
+
+<!-- cat mars.txt -->
+
+<!-- git status -->
+<!-- git diff -->
+
+<!-- git commit -m "Add concerns about effects of Mars' moons on Wolfman" -->
+<!--     # this won't work until we add (stage) it -->
+
+<!-- git add mars.txt -->
+<!-- git commit -m "Add concerns about effects of Mars' moons on Wolfman" -->
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Let's add some more -->
+<!-- ``` -->
+<!-- nano mars.txt -->
+<!-- But the Mummy will appreciate the lack of humidity -->
+
+<!-- cat mars.txt -->
+
+<!-- git diff -->
+
+<!-- git add mars.txt -->
+<!-- git diff -->
+<!-- git diff --staged -->
+
+<!-- git commit -m "Discuss concerns about Mars' climate for Mummy" -->
+
+<!-- git status -->
+
+<!-- git log -->
+<!-- git log -1 -->
+<!-- git log --oneline -->
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Exploring histories -->
+<!-- ``` -->
+<!-- nano mars.txt -->
+<!-- An ill-considered change -->
+
+<!-- git diff HEAD mars.txt -->
+
+<!-- git add mars.txt -->
+<!-- git commit -m "considerations" -->
+
+<!-- git log -->
+<!-- git log --oneline -->
+<!-- git diff HEAD~1 mars.txt -->
+<!-- git diff HEAD~2 mars.txt -->
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- Checkout an older version -->
+<!-- ``` -->
+<!-- git log --oneline -->
+
+<!-- git checkout HEAD~2 mars.txt -->
+<!-- cat mars.txt -->
+
+<!-- git checkout HEAD mars.txt -->
+<!-- cat mars.txt -->
+
+<!-- git checkout HEAD~1 mars.txt -->
+<!-- cat mars.txt -->
+<!-- git add mars.txt -->
+<!-- git commit -m "reverting to previous version" -->
+<!-- ``` -->
+
+<!-- --- -->
+<!-- ## Branching -->
+<!-- ``` -->
+<!-- git branch wip -->
+<!-- git branch -->
+
+<!-- git checkout wip -->
+<!-- git branch -->
+
+<!-- nano mars.txt -->
+<!-- Elon is giving us a ride tomorrow -->
+<!-- git add mars.txt -->
+<!-- git commit -m "travel plans" -->
+<!-- cat mars.txt -->
+
+<!-- git checkout master -->
+<!-- cat mars.txt -->
+
+<!-- git merge wip -->
+<!-- cat mars.txt -->
+<!-- git merge wip -->
+<!-- cat mars.txt -->
+<!-- ``` -->
+<!-- * Don't work on the master branch -->
+
+<!-- --- -->
+
+<!-- ### Collaboration with [github.com](https://github.com) -->
+<!-- * Github is great for public repos -->
+<!-- * Gitlab is great for more security and private repos -->
+<!-- * both allow collaboration -->
+
+<!-- --- -->
+
+<!-- Make some commits and then do a pull request  -->
+<!-- This way, collaborators can see what you're working on  -->
+<!-- Name it  -->
+<!-- ``` -->
+<!-- WIP: .... -->
+<!-- ``` -->
+
+<!-- --- -->
+<!-- ### Connecting your local repository to github.com -->
+<!-- ...push an existing repository from the command line -->
+<!-- ``` -->
+<!-- git remote add origin https://github.com/timathomas/planets.git -->
+<!-- git push -u origin master  -->
+<!-- ``` -->
+
+<!-- When you're on a branch -->
+<!-- ``` -->
+<!-- git push origin <branch name> -->
+<!-- ``` -->
+
+<!-- --- -->
+
+<!-- ``` -->
+<!-- echo "*~" >> .gitignore -->
+
+<!-- git add .gitignore -->
+<!-- git commit -m "add .gitignore" -->
+<!-- git push origin master  -->
+<!-- ``` -->
+
+<!-- --- -->
+<!-- ### My Workflow -->
+<!-- * Start or fork a repo -->
+<!-- * clone the online repo to my local machine -->
+<!-- * make some base edits to the README.md -->
+<!-- * BRANCH! (Stay off the master) -->
+<!--     - If I'm collaborating, do a pull request online sooner than later -->
+<!--         + label it `WIP: branch name` -->
+<!--     - Stage and commit often (like your habit of saving a file) -->
+
+<!-- --- -->
+<!-- ### My Workflow -->
+<!-- * After you've completed a task or reached a goal, merge your branch to the master. -->
+<!--     - If you're collaborating, merge through the online repo, not through the terminal -->
+
+<!-- ### Suggestions -->
+<!-- * Keep a log.md and update the README.md file often -->
+
+<!-- --- -->
+
+<!-- #### My favorite tools -->
+<!-- * [Sublime Text](https://www.sublimetext.com) -->
+<!--     - Others [Atom](https://atom.io) (sluggish in my opinion) -->
+<!--     - Favorite Sublime Packages -->
+<!--         + Git, Gitgutter, Thesaurus, LanguageTool, R-IDE, SendCode, Terminal -->
+<!-- * [Sublime Merge](https://www.sublimemerge.com) to view complex branches -->
